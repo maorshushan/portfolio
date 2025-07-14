@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+    --color-xanthous: #ffbc42;
+  --color-razzmatazz: #E63274;
+  --color-caribbeancurrent: #296E6B;
+  --color-nonphotoblue: #73D2DE;
+  --color-linen: #fcf8f5;
+  }
+
+  .sarina-regular {
+    font-family: "Sarina", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+:hover.animatedbutton {
+  background: linear-gradient(100deg,var(--color-xanthous),var(--color-razzmatazz),var(--color-nonphotoblue),var(--color-caribbeancurrent));
+  background-size: 240% 240%;
+  animation: gradient-animation 16s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) translateX(0px) scale(1);
+  }
+  25% {
+    transform: translateY(-20px) translateX(10px) scale(1.05);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-15px) scale(0.95);
+  }
+  75% {
+    transform: translateY(15px) translateX(5px) scale(1.1);
+  }
+}
+
+@keyframes grain-move {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 100px);
+  }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
