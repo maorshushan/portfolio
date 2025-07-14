@@ -21,8 +21,7 @@ const GradientGame: React.FC<GradientGameProps> = ({ className = '' }) => {
       '#73D2DE', // nonphotoblue
       '#296E6B'  // caribbeancurrent
     ];
-
-    const totalBlocks = size * size;
+    
     const colors: string[] = [];
 
     // Helper function to interpolate between two colors

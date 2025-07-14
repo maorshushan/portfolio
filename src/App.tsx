@@ -1,10 +1,9 @@
 import Navbar, { type NavLink } from './components/navbar'
 import Home from './pages/home'
-import { Route, Routes, useLocation } from 'react-router'
+import { Route, Routes } from 'react-router'
 import Projects, { type Project } from './pages/projects'
 import About from './pages/about'
 import DesignSystem from './pages/projects/design-system'
-import GrainyGradientBg from './components/grainy-gradient-bg'
 
 const links: NavLink[] = [
   { label: 'Home', href: '/', element: <Home /> },

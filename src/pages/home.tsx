@@ -1,7 +1,7 @@
 import React from 'react';
 import GrainyGradientBg from '../components/grainy-gradient-bg';
 import AnimatingWords from '../components/animating-words';
-import GradientGame from '../components/gradient-game';
+// import GradientGame from '../components/gradient-game';
 import mainMemoji from '../assets/mainMemoji.png';
 
 const Home: React.FC = () => {
